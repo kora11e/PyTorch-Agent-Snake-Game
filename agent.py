@@ -73,8 +73,8 @@ class Agent:
 
         states, actions, rewards, next_states, dones = zip(*mini_sample)
         self.trainer.train_step(states, actions, rewards, next_states, dones)
-        for state, action, reward, next_state, done in mini_sample:
-            self.trainer.train_step(state, action, reward, next_state, done)
+        #for state, action, reward, next_state, done in mini_sample:
+        #    self.trainer.train_step(state, action, reward, next_state, done)
 
     def train_short_memory(self, state, action, reward, next_state, done):
         self.trainer.train_step(state, action, reward, next_state, done)
@@ -101,6 +101,7 @@ def train():
     record = 0
     agent = Agent()
     game = SnakeGameAI()
+    
     while True:
         state_old = agent.getState(game)
         final_move = agent.get_action(state_old)

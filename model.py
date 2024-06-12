@@ -25,6 +25,7 @@ class Linear_QNet(nn.Module):
 
 class QTrainer:
     def __init__(self, model, lr, gamma):
+        self.model = model
         self.lr = lr
         self.gamma = gamma
         self.optimizer = optim.Adam(model.parameters(), lr=self.lr)
@@ -41,10 +42,10 @@ class QTrainer:
             next_state = torch.unsqueeze(next_state, 0)
             action = torch.unsqueeze(action, 0)
             reward = torch.unsqueeze(reward, 0)
-            done = (done, 0)
+            done = (done, )
 
         #1 predicted 0 values with current state
-        pred = self.mode(state)
+        pred = self.model(state)
         target = pred.clone()
         for idx in range(len(done)):
             Q_new = reward[idx]
