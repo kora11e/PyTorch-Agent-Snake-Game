@@ -1,5 +1,4 @@
-<h2> Instructions to run the program </h2>
-Markup: 
+<h2> Instructions to run the program </h2> 
 
 1. Download Visual Studio Code. The official dowload page is available here: https://code.visualstudio.com/download
 2. Install necessary packages  - pip install torch numpy pygame helper matplotlib collections -
