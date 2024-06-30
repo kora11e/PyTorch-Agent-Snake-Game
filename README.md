@@ -21,7 +21,10 @@ Snake, being a simple yet challenging game, provides an ideal environment for ex
 <h2> Instructions to run the program </h2> 
 
 1. Download Visual Studio Code. The official dowload page is available here: https://code.visualstudio.com/download
-2. Install necessary packages  - pip install torch numpy pygame helper matplotlib collections -
-3. Download the project and open it in the IDE
-4. In terminal run command - python agent.py -
+2. Move to folder Pytorch-Agent-Snake-Game-main
+3. Create virtual environment. In terminal type - python -m venv SnakeGame-env -
+4. Then type - pygamer\Scripts\activate -
+5. Install necessary packages using requirements.txt. Type in console - pip install -r requirements.txt -
+6. Run the program with command - python agent.py -
+7. If your antivirus detects danger, ingore it and continue
 
