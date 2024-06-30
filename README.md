@@ -1,9 +1,11 @@
 <h1> PyTorch Agent Snake Solver </h1>
 
 <h2> Overview </h2>
-```
+
+```python
 pip install pygame
 ```
+
 This project is a demonstration of the potential of artificial intelligence in playing and mastering video games. It leverages the power of PyTorch for the neural network and reinforcement learning components, combined with the Pygame library for game implementation and visualization. The result is an AI agent capable of playing the classic Snake game autonomously, learning and improving its performance through experience.
 
 <h2> Motivation </h2>
