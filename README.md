@@ -11,11 +11,12 @@ The inspiration behind this project stems from my long-standing passion for vide
 Snake, being a simple yet challenging game, provides an ideal environment for experimenting with AI techniques. By developing this project, I aimed to delve deeper into reinforcement learning, understand its intricacies, and witness firsthand how an AI agent can evolve and improve its gameplay over time.
 
 <h2> Features </h2>
-AI Agent: Utilizes a deep Q-network (QNN) for decision making.
-Training: The agent is trained using reinforcement learning principles, learning from its experiences in the game.
-Game Environment: Built using Pygame, providing a visual representation of the game and the agent's actions.
-Customizable Parameters: Various parameters such as learning rate, discount factor, and exploration rate can be tuned for optimal performance.
-Real-time Visualization: Watch the AI play the game in real-time, showcasing its learning progress and strategy evolution.
+
+1. AI Agent: Utilizes a deep Q-network (QNN) for decision making.
+2. Training: The agent is trained using reinforcement learning principles, learning from its experiences in the game.
+3. Game Environment: Built using Pygame, providing a visual representation of the game and the agent's actions.
+4. Customizable Parameters: Various parameters such as learning rate, discount factor, and exploration rate can be tuned for optimal performance.
+5. Real-time Visualization: Watch the AI play the game in real-time, showcasing its learning progress and strategy evolution.
 
 <h2> Instructions to run the program </h2> 
 
