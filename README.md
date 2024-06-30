@@ -39,5 +39,3 @@ pip install -r requirements.txt
 ```python
 python agent.py
 ```
-8. If your antivirus detects danger, ignore it and continue
-
