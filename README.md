@@ -2,10 +2,6 @@
 
 <h2> Overview </h2>
 
-```python
-pip install pygame
-```
-
 This project is a demonstration of the potential of artificial intelligence in playing and mastering video games. It leverages the power of PyTorch for the neural network and reinforcement learning components, combined with the Pygame library for game implementation and visualization. The result is an AI agent capable of playing the classic Snake game autonomously, learning and improving its performance through experience.
 
 <h2> Motivation </h2>
@@ -25,11 +21,23 @@ Snake, being a simple yet challenging game, provides an ideal environment for ex
 <h2> Instructions to run the program </h2> 
 
 1. Download Visual Studio Code. The official dowload page is available here: https://code.visualstudio.com/download
-2. Make sure your Python version is 3.3 or higher
+2. Make sure your Python version is 3.3 or higher. If not use command:
 3. Move to folder Pytorch-Agent-Snake-Game-main
-4. Create virtual environment. In terminal type - python -m venv SnakeGame-env -
-5. Then type - pygamer\Scripts\activate -
-6. Install necessary packages using requirements.txt. Type in console - pip install -r requirements.txt -
-7. Run the program with command - python agent.py -
-8. If your antivirus detects danger, ingore it and continue
+4. Create virtual environment. In terminal type:
+```python
+python -m venv SnakeGame-env
+```
+5. Then activate it by typing:
+```python
+pygamer\Scripts\activate
+```
+6. Install necessary packages using requirements.txt. Type in console:
+```python
+pip install -r requirements.txt
+```
+7. Run the program with command:
+```python
+python agent.py
+```
+8. If your antivirus detects danger, ignore it and continue
 
