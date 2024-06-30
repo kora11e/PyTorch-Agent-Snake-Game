@@ -25,6 +25,18 @@ Snake, being a simple yet challenging game, provides an ideal environment for ex
 3. Move to folder Pytorch-Agent-Snake-Game-main
 4. Create virtual environment. In terminal type:
 ```python
+pip install virtualenv
+```
+then:
+```python
+python -m venv SnakeGame-env
+```
+If you use Linux type:
+```python
+sudo apt install python3-virtualenv
+```
+and:
+```python
 python -m venv SnakeGame-env
 ```
 5. Then activate it by typing:
