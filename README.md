@@ -12,7 +12,7 @@ Snake, being a simple yet challenging game, provides an ideal environment for ex
 
 <h2> Features </h2>
 
-1. AI Agent: Utilizes a deep Q-network (QNN) for decision making.
+1. AI Agent: Utilizes a deep Q-network (QNet) for decision making.
 2. Training: The agent is trained using reinforcement learning principles, learning from its experiences in the game.
 3. Game Environment: Built using Pygame, providing a visual representation of the game and the agent's actions.
 4. Customizable Parameters: Various parameters such as learning rate, discount factor, and exploration rate can be tuned for optimal performance.
@@ -21,10 +21,11 @@ Snake, being a simple yet challenging game, provides an ideal environment for ex
 <h2> Instructions to run the program </h2> 
 
 1. Download Visual Studio Code. The official dowload page is available here: https://code.visualstudio.com/download
-2. Move to folder Pytorch-Agent-Snake-Game-main
-3. Create virtual environment. In terminal type - python -m venv SnakeGame-env -
-4. Then type - pygamer\Scripts\activate -
-5. Install necessary packages using requirements.txt. Type in console - pip install -r requirements.txt -
-6. Run the program with command - python agent.py -
-7. If your antivirus detects danger, ingore it and continue
+2. Make sure your Python version is 3.3 or higher
+3. Move to folder Pytorch-Agent-Snake-Game-main
+4. Create virtual environment. In terminal type - python -m venv SnakeGame-env -
+5. Then type - pygamer\Scripts\activate -
+6. Install necessary packages using requirements.txt. Type in console - pip install -r requirements.txt -
+7. Run the program with command - python agent.py -
+8. If your antivirus detects danger, ingore it and continue
 
