@@ -18,7 +18,7 @@ Snake, being a simple yet challenging game, provides an ideal environment for ex
 4. Customizable Parameters: Various parameters such as learning rate, discount factor, and exploration rate can be tuned for optimal performance.
 5. Real-time Visualization: Watch the AI play the game in real-time, showcasing its learning progress and strategy evolution.
 
-<h2> Instructions to run the program </h2> 
+<h2> Instructions to run the program on Windows </h2> 
 
 1. Download Visual Studio Code. The official dowload page is available here: https://code.visualstudio.com/download
 2. Make sure your Python version is 3.3 or higher. If not use command:
@@ -30,6 +30,28 @@ python -m venv SnakeGame-env
 5. Then activate it by typing:
 ```python
 pygamer\Scripts\activate
+```
+6. Install necessary packages using requirements.txt. Type in console:
+```python
+pip install -r requirements.txt
+```
+7. Run the program with command:
+```python
+python agent.py
+```
+
+<h2> Instructions to run the program on Unix/MacOS </h2> 
+
+1. Download Visual Studio Code. The official dowload page is available here: https://code.visualstudio.com/download
+2. Make sure your Python version is 3.3 or higher. If not use command:
+3. Move to folder Pytorch-Agent-Snake-Game-main
+4. Create virtual environment. In terminal type:
+```python
+python -m venv SnakeGame-env
+```
+5. Then activate it by typing:
+```python
+source /Scripts/activate
 ```
 6. Install necessary packages using requirements.txt. Type in console:
 ```python
