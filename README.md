@@ -41,7 +41,7 @@ python -m venv SnakeGame-env
 ```
 5. Then activate it by typing:
 ```python
-pygamer\Scripts\activate
+SnakeGame-env\Scripts\activate
 ```
 6. Install necessary packages using requirements.txt. Type in console:
 ```python
