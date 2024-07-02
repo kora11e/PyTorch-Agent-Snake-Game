@@ -76,3 +76,6 @@ python agent.py
 
 <h2> Project Explanation </h2>
 TBA
+
+Project is implementation of behaviour approach by Patrick Loeber under MIT License
+https://github.com/patrickloeber/snake-ai-pytorch/blob/main/LICENSE
