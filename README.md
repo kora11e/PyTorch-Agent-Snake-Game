@@ -1,7 +1,7 @@
 <h1> PyTorch Agent Snake Solver </h1>
 
 <h2> Update - 13 VIII 2024 </h2>
-The Neural Network reaches the level rate of around 10-11 and then suddenly slows down to the level that cannot provide good results.
+The Neural Network reaches the slope level rate of 10-11 providing good results.
 
 <br/><br/>
 ![Figure_1](https://github.com/user-attachments/assets/2617e996-0179-4101-8568-5fd5df66d01e)
