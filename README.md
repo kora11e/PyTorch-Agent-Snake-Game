@@ -1,5 +1,10 @@
 <h1> PyTorch Agent Snake Solver </h1>
 
+<h2> Update - 13 VIII 2024 </h2>
+The Neural Network reaches the level rate of around 10-11 and then suddenly slows down to the level that cannot provide good results.
+
+![Figure_1](https://github.com/user-attachments/assets/2617e996-0179-4101-8568-5fd5df66d01e)
+
 <h2> Overview </h2>
 
 This project is a demonstration of the potential of artificial intelligence in playing and mastering video games. It leverages the power of PyTorch for the neural network and reinforcement learning components, combined with the Pygame library for game implementation and visualization. The result is an AI agent capable of playing the classic Snake game autonomously, learning and improving its performance through experience.
