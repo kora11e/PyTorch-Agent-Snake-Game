@@ -4,7 +4,11 @@
 
 This project is a demonstration of the potential of artificial intelligence in playing and mastering video games. It leverages the power of PyTorch for the neural network and reinforcement learning components, combined with the Pygame library for game implementation and visualization. The result is an AI agent capable of playing the classic Snake game autonomously, learning and improving its performance through experience.
 
+<h3>Neural Network playing the game</h3>
+https://github.com/user-attachments/assets/54694e1e-d3cb-46d4-916b-c5c798de85d3
 
+<h3>Learning rate of the Neural Network</h3>
+https://github.com/user-attachments/assets/83a6ff0d-164c-4286-b586-69feb54c7364
 
 <h2> Motivation </h2>
 
