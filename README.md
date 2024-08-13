@@ -4,7 +4,7 @@
 The Neural Network reaches the level rate of around 10-11 and then suddenly slows down to the level that cannot provide good results.
 
 
-<p align="center"> ![Figure_1](https://github.com/user-attachments/assets/2617e996-0179-4101-8568-5fd5df66d01e) </p>
+![Figure_1](https://github.com/user-attachments/assets/2617e996-0179-4101-8568-5fd5df66d01e)
 
 
 <h2> Overview </h2>
