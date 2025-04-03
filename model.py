@@ -15,15 +15,22 @@ class Linear_QNet(nn.Module):
         x = self.linear2(x)
         return x
 
-    def save(self, file_name='model.pth'):
+    def save(self, file_names='model.pth'):
         model_folder_path = './model'
         if not os.path.exists(model_folder_path):
             os.makedirs(model_folder_path)
 
-        file_name = os.path.join(model_folder_path, file_name)
+        file_name = os.path.join(model_folder_path, file_names)
         torch.save(self.state_dict(), file_name)
 
+    def load(self, file_names=None):
+        if file_names != None:
+            model_folder_path = './model/' + file_names
+            if os.path.isfile(model_folder_path):
+                self.load_state_dict(torch.load(model_folder_path, weights_only=True))
+                print('Weights have been loaded successfully!')
 
+#save the optimizer
 class QTrainer:
     def __init__(self, model, lr, gamma):
         self.lr = lr
@@ -58,11 +65,23 @@ class QTrainer:
 
             target[idx][torch.argmax(action[idx]).item()] = Q_new
     
-        # 2: Q_new = r + y * max(next_predicted Q value) -> only do this if not done
-        # pred.clone()
-        # preds[argmax(action)] = Q_new
         self.optimizer.zero_grad()
         loss = self.criterion(target, pred)
         loss.backward()
 
         self.optimizer.step()
+
+    def save_optimizer(self, file_names='model_optimizer.pth'):
+        model_folder_path = './model'
+        if not os.path.exists(model_folder_path):
+            os.makedirs(model_folder_path)
+
+        file_name = os.path.join(model_folder_path, file_names)
+        torch.save(self.optimizer.state_dict(), file_name)
+
+    def load_optimizer(self, file_names=None):
+        if file_names != None:
+            model_folder_path = './model/' + file_names
+            if os.path.isfile(model_folder_path):
+                self.optimizer.load_state_dict(torch.load(model_folder_path))
+                print('Optimizer has been loaded successfully!')
