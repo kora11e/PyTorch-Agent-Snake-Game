@@ -29,7 +29,7 @@ BLUE2 = (0, 100, 255)
 BLACK = (0,0,0)
 
 BLOCK_SIZE = 20
-SPEED = 60
+SPEED = 400
 
 class SnakeGameAI:
     
@@ -72,7 +72,7 @@ class SnakeGameAI:
                 quit()
         
         # 2. move
-        self._move(action) # update the head
+        self._move(action)
         self.snake.insert(0, self.head)
         
         # 3. check if game over
@@ -123,19 +123,20 @@ class SnakeGameAI:
         pygame.display.flip()
         
     def _move(self, action):
-
+        # [1, 0, 0] -> straight
+        # [0, 1, 0] -> right turn
+        # [0, 0, 1] -> left turn
         clock_wise = [Direction.RIGHT, Direction.DOWN, Direction.LEFT, Direction.UP]
         idx = clock_wise.index(self.direction)
-        if np.array_equal(action, [1, 0, 0]):
-            new_direction = clock_wise[idx]
-        elif np.array_equal(action, [0, 1, 0]):
-            next_idx = (idx + 1) % 4
-            new_direction = clock_wise[next_idx]
-        else:
-            next_idx = (idx + 1) % 4
-            new_direction = clock_wise[next_idx]
-        self.direction = new_direction
 
+        if np.array_equal(action, [1, 0, 0]):
+            new_dir = clock_wise[idx]  # no change
+        elif np.array_equal(action, [0, 1, 0]):
+            new_dir = clock_wise[(idx + 1) % 4]  # right turn
+        else:
+            new_dir = clock_wise[(idx - 1) % 4]  # left turn
+
+        self.direction = new_dir
 
         x = self.head.x
         y = self.head.y
@@ -147,5 +148,5 @@ class SnakeGameAI:
             y += BLOCK_SIZE
         elif self.direction == Direction.UP:
             y -= BLOCK_SIZE
-            
+
         self.head = Point(x, y)
