@@ -9,7 +9,7 @@ from helper import plot
 
 MAX_MEMORY = 100_000
 BATCH_SIZE = 1000
-LR = 1e-4
+LR = 1e-5
 GAMMA = 0.99
 TARGET_UPDATE = 500 
 

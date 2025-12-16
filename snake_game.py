@@ -82,7 +82,12 @@ class SnakeGameAI:
             game_over = True
             reward = -10
             return reward, game_over, self.score
-            
+        
+        margin = 2 * BLOCK_SIZE
+        if (self.head.x < margin or self.head.x > self.w - margin or
+            self.head.y < margin or self.head.y > self.h - margin):
+            reward -= 0.3
+
         # 4. place new food or just move
         if self.head == self.food:
             self.score += 1
